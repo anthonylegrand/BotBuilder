@@ -2,10 +2,18 @@ interface BaseRender {
   title: string;
 }
 
-interface ClientRender extends BaseRender {}
+interface Output {
+  outputs: string[];
+}
 
-interface EventRender extends BaseRender {}
+interface Input {
+  inputs: string[];
+}
 
-interface FunctionRender extends BaseRender {}
+interface ClientRender extends BaseRender, Output {}
 
-export { ClientRender };
+interface EventRender extends BaseRender, Output {}
+
+interface FunctionRender extends BaseRender, Input, Output {}
+
+export { ClientRender, EventRender, FunctionRender };

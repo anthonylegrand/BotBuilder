@@ -1,7 +1,9 @@
 import BaseClient from "./BaseClient";
 
+abstract class InOut {}
+
 abstract class BaseEvent {
   abstract client: BaseClient;
 }
 
-export default BaseEvent;
+export { BaseEvent, InOut };

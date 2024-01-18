@@ -1,10 +1,12 @@
 import BaseClient from "../../models/BaseClient";
-import TwitchEvent from "./TwitchEvent";
+import { _TwitchEvent } from "./TwitchEvent";
 import { ClientRender } from "../../models/BaseRender";
 
 class TwitchClient implements BaseClient {
-  renderElement: ClientRender = { title: "soon" };
-  events: TwitchEvent[];
+  _renderElement: ClientRender = { title: "Twitch Bot", outputs: [] };
+  events: _TwitchEvent[];
+
+  constructor() {}
 }
 
 export default TwitchClient;

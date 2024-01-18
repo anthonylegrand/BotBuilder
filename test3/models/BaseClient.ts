@@ -1,8 +1,8 @@
-import BaseEvent from "./BaseEvent";
+import { BaseEvent } from "./BaseEvent";
 import { ClientRender } from "./BaseRender";
 
 interface BaseClient {
-  renderElement: ClientRender;
+  _renderElement: ClientRender;
   events: BaseEvent[];
 }
 

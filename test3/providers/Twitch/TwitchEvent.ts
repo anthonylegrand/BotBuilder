@@ -1,8 +1,8 @@
-import BaseEvent from "./../../models/BaseEvent";
+import { BaseEvent } from "./../../models/BaseEvent";
 import TwitchClient from "./TwitchClient";
 
-abstract class TwitchEvent implements BaseEvent {
+abstract class _TwitchEvent implements BaseEvent {
   client: TwitchClient;
 }
 
-export default TwitchEvent;
+export { _TwitchEvent };
