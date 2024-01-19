@@ -1,3 +1,8 @@
-interface BaseConfig {}
+import { ConfigData, RequiredData } from "../utils/ConfigData";
 
-export default BaseConfig;
+interface BaseConfig {
+  required: RequiredData[];
+  config: ConfigData[];
+}
+
+export { BaseConfig };

@@ -1,9 +1,7 @@
-import BaseClient from "./BaseClient";
+import { ElementRender, EventRender } from "../utils/Render";
 
-abstract class InOut {}
-
-abstract class BaseEvent {
-  abstract client: BaseClient;
+abstract class BaseEvent implements ElementRender {
+  abstract _renderElement: EventRender;
 }
 
-export { BaseEvent, InOut };
+export { BaseEvent };
